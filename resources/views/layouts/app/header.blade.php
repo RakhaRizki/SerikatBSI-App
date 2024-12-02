@@ -1,4 +1,7 @@
-<nav class="bg-green-100 shadow-md py-4 sticky top-0 px-6 w-full z-10">
+{{-- Sticky Navbar --}}
+{{-- sticky top-0 --}}
+
+<nav class="bg-green-100 shadow-md py-4 px-6 w-full z-10">
     <div class="max-w-screen-xl mx-auto flex justify-between items-center">
         <!-- Logo -->
         <div class="flex items-center">
@@ -28,12 +31,12 @@
                     class="absolute left-0 bottom-0 w-0 h-0.5 bg-green-600 transition-all duration-300 group-hover:w-full"></span>
             </a>
             <a href="#login" class="relative group text-green-600 font-semibold py-2 px-1 no-underline">
-                <i class="fas fa-sign-in-alt mr-2"></i> Login
+                <i class="fas fa-sign-in-alt mr-2"></i> Masuk
                 <span
                     class="absolute left-0 bottom-0 w-0 h-0.5 bg-green-600 transition-all duration-300 group-hover:w-full"></span>
             </a>
             <a href="#register" class="relative group text-green-600 font-semibold py-2 px-1 no-underline">
-                <i class="fas fa-user-plus mr-2"></i> Register
+                <i class="fas fa-user-plus mr-2"></i> Daftar
                 <span
                     class="absolute left-0 bottom-0 w-0 h-0.5 bg-green-600 transition-all duration-300 group-hover:w-full"></span>
             </a>
@@ -61,3 +64,20 @@
         </a>
     </div>
 </nav>
+
+<script>
+    // Toggle visibility of mobile menu
+    const menuToggle = document.getElementById('menu-toggle');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    menuToggle.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden'); // Toggle the "hidden" class on the mobile menu
+    });
+
+    // Close mobile menu on window resize (for screens larger than 768px)
+    window.addEventListener('resize', () => {
+        if (window.innerWidth >= 768) {
+            mobileMenu.classList.add('hidden'); // Hide mobile menu on larger screens
+        }
+    });
+</script>

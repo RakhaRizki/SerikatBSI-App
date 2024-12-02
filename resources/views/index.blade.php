@@ -38,7 +38,7 @@
             <!-- Overview Section -->
             <section id="overview" class="py-16 bg-green-50">
                 <div class="max-w-screen-xl mx-auto text-center px-4">
-                    <h2 class="text-4xl font-extrabold text-green-600 mb-8">Overview Serikat Pekerja Bank BSI</h2>
+                    <h2 class="text-4xl font-extrabold text-green-600 mb-8 sm:mt-12">Overview Serikat Pekerja Bank BSI</h2>
                     <p class="text-lg sm:text-xl text-gray-700 mb-12 leading-relaxed">
                         Serikat Pekerja Bank BSI adalah organisasi yang bertujuan untuk memperjuangkan hak-hak pekerja di
                         Bank BSI,
@@ -176,54 +176,68 @@
                 </div>
             </section>
 
-            <!-- Aktifitas Section -->
+            {{-- Aktifitas Section --}}
             <section id="aktivitas" class="py-16 bg-green-50">
-                <div class="max-w-screen-xl mx-auto text-center px-4">
-                    <h2 class="text-4xl font-extrabold text-green-700 mb-8">Aktifitas Serikat Pekerja Bank BSI</h2>
-                    <p class="text-lg sm:text-xl text-gray-700 mb-12 leading-relaxed">
-                        Berbagai kegiatan yang dilakukan oleh Serikat Pekerja Bank BSI bertujuan untuk memperjuangkan
-                        hak-hak anggota, meningkatkan kesejahteraan, serta menjaga hubungan industrial yang harmonis dengan
-                        manajemen.
+                <div class="max-w-screen-xl mx-auto text-center px-6">
+                    <!-- Title -->
+                    <h2 class="text-4xl font-extrabold text-green-600 mb-10 tracking-wide">
+                        Aktifitas Serikat Pekerja Bank BSI
+                    </h2>
+                    <p class="text-lg sm:text-xl text-gray-700 mb-16 leading-relaxed max-w-3xl mx-auto">
+                        Kami berkomitmen untuk memperjuangkan hak-hak anggota, meningkatkan kesejahteraan, dan menjaga
+                        hubungan
+                        industrial yang harmonis dengan manajemen melalui berbagai kegiatan yang bermakna.
                     </p>
 
                     <!-- Activities Grid -->
-                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 px-4">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
                         <!-- Activity 1 -->
                         <div
-                            class="bg-white p-8 rounded-xl shadow-lg transform hover:-translate-y-2 hover:scale-105 hover:shadow-2xl transition-transform duration-500 relative overflow-hidden">
+                            class="relative group bg-white p-10 rounded-3xl shadow-lg transition-transform transform hover:scale-105 hover:shadow-xl flex flex-col items-center justify-between space-y-6">
                             <div
-                                class="absolute inset-0 bg-gradient-to-r from-green-200 to-transparent opacity-0 hover:opacity-30 transition-opacity duration-500">
+                                class="absolute inset-0 bg-gradient-to-r from-green-200 to-green-100 opacity-0 group-hover:opacity-20 rounded-3xl transition-opacity duration-500">
                             </div>
                             <i
-                                class="fas fa-users fa-4x text-green-700 mb-6 transition-transform duration-300 hover:rotate-12"></i>
-                            <h3 class="text-2xl font-semibold text-green-700 mb-3">Pelatihan & Pengembangan</h3>
-                            <p class="text-lg text-gray-600">
+                                class="fas fa-users fa-4x text-green-600 transition-transform group-hover:scale-110 duration-300"></i>
+                            <h3
+                                class="text-2xl font-bold text-green-700 group-hover:text-green-500 transition-colors duration-300 text-center">
+                                Pelatihan & Pengembangan
+                            </h3>
+                            <p class="text-lg text-gray-600 text-center">
                                 Memberikan pelatihan untuk meningkatkan keterampilan pekerja di Bank BSI.
                             </p>
                         </div>
+
                         <!-- Activity 2 -->
                         <div
-                            class="bg-white p-8 rounded-xl shadow-lg transform hover:-translate-y-2 hover:scale-105 hover:shadow-2xl transition-transform duration-500 relative overflow-hidden">
+                            class="relative group bg-white p-10 rounded-3xl shadow-lg transition-transform transform hover:scale-105 hover:shadow-xl flex flex-col items-center justify-between space-y-6">
                             <div
-                                class="absolute inset-0 bg-gradient-to-r from-green-200 to-transparent opacity-0 hover:opacity-30 transition-opacity duration-500">
+                                class="absolute inset-0 bg-gradient-to-r from-green-200 to-green-100 opacity-0 group-hover:opacity-20 rounded-3xl transition-opacity duration-500">
                             </div>
                             <i
-                                class="fas fa-gavel fa-4x text-green-700 mb-6 transition-transform duration-300 hover:rotate-12"></i>
-                            <h3 class="text-2xl font-semibold text-green-700 mb-3">Negosiasi & Perlindungan</h3>
-                            <p class="text-lg text-gray-600">
+                                class="fas fa-gavel fa-4x text-green-600 transition-transform group-hover:scale-110 duration-300"></i>
+                            <h3
+                                class="text-2xl font-bold text-green-700 group-hover:text-green-500 transition-colors duration-300 text-center">
+                                Negosiasi & Perlindungan
+                            </h3>
+                            <p class="text-lg text-gray-600 text-center">
                                 Melakukan negosiasi untuk perlindungan hak-hak pekerja serta kesejahteraan anggota.
                             </p>
                         </div>
+
                         <!-- Activity 3 -->
                         <div
-                            class="bg-white p-8 rounded-xl shadow-lg transform hover:-translate-y-2 hover:scale-105 hover:shadow-2xl transition-transform duration-500 relative overflow-hidden">
+                            class="relative group bg-white p-10 rounded-3xl shadow-lg transition-transform transform hover:scale-105 hover:shadow-xl flex flex-col items-center justify-between space-y-6">
                             <div
-                                class="absolute inset-0 bg-gradient-to-r from-green-200 to-transparent opacity-0 hover:opacity-30 transition-opacity duration-500">
+                                class="absolute inset-0 bg-gradient-to-r from-green-200 to-green-100 opacity-0 group-hover:opacity-20 rounded-3xl transition-opacity duration-500">
                             </div>
                             <i
-                                class="fas fa-calendar-check fa-4x text-green-700 mb-6 transition-transform duration-300 hover:rotate-12"></i>
-                            <h3 class="text-2xl font-semibold text-green-700 mb-3">Kegiatan Sosial</h3>
-                            <p class="text-lg text-gray-600">
+                                class="fas fa-calendar-check fa-4x text-green-600 transition-transform group-hover:scale-110 duration-300"></i>
+                            <h3
+                                class="text-2xl font-bold text-green-700 group-hover:text-green-500 transition-colors duration-300 text-center">
+                                Kegiatan Sosial
+                            </h3>
+                            <p class="text-lg text-gray-600 text-center">
                                 Mengadakan kegiatan sosial yang mendukung kesejahteraan anggota.
                             </p>
                         </div>
@@ -232,36 +246,6 @@
             </section>
 
         </main>
-
-        <!-- Footer -->
-        <footer class="bg-green-100 py-4 mt-auto">
-            <div
-                class="max-w-screen-xl mx-auto px-6 flex flex-col md:flex-row justify-center items-center space-x-0 md:space-x-4">
-                <!-- Logo in Footer -->
-                <img src="{{ asset('img/logo.svg') }}" alt="Logo" class="h-8 mb-2 md:mb-0">
-
-                <!-- Copyright Text -->
-                <span class="text-green-600 text-sm mt-2 text-center md:text-left">© 2024 Serikat Pekerja BSI. All rights
-                    reserved.</span>
-            </div>
-        </footer>
-
-        <script>
-            // Toggle visibility of mobile menu
-            const menuToggle = document.getElementById('menu-toggle');
-            const mobileMenu = document.getElementById('mobile-menu');
-
-            menuToggle.addEventListener('click', () => {
-                mobileMenu.classList.toggle('hidden'); // Toggle the "hidden" class on the mobile menu
-            });
-
-            // Close mobile menu on window resize (for screens larger than 768px)
-            window.addEventListener('resize', () => {
-                if (window.innerWidth >= 768) {
-                    mobileMenu.classList.add('hidden'); // Hide mobile menu on larger screens
-                }
-            });
-        </script>
 
     </body>
 
